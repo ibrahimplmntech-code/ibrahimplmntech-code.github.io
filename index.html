@@ -1,10 +1,249 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>PLM NTECH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PLM NTECH</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    color:#333;
+}
+
+nav{
+    background:#003366;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1600');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#ff9900;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+section{
+    padding:60px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#003366;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f4f4f4;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color:#003366;
+    margin-bottom:10px;
+}
+
+.about{
+    background:#f9f9f9;
+}
+
+.contact{
+    background:#003366;
+    color:white;
+    text-align:center;
+}
+
+.contact a{
+    color:#ffcc00;
+    text-decoration:none;
+}
+
+footer{
+    background:#001f3f;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:22px;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2rem;
+    }
+}
+</style>
 </head>
+
 <body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#training">Training</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
     <h1>PLM NTECH</h1>
-    <p>Engineering Services & Product Development</p>
+    <p>Engineering Services | Product Development | Technical Training</p>
+    <a href="#contact" class="btn">Contact Us</a>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">About Us</h2>
+    <p style="text-align:center;max-width:900px;margin:auto;">
+        PLM NTECH provides engineering services, technical training,
+        embedded solutions, CAD design services, product development,
+        3D printing solutions and automation systems. Our goal is to
+        deliver innovative and practical engineering solutions.
+    </p>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>CAD Design</h3>
+            <p>2D Drafting, 3D Modeling, Assemblies, Manufacturing Drawings.</p>
+        </div>
+
+        <div class="card">
+            <h3>Embedded Programming</h3>
+            <p>Arduino, STM32, ESP32, CAN Communication and IoT Solutions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Product Development</h3>
+            <p>Concept Design, Prototyping and Engineering Support.</p>
+        </div>
+
+        <div class="card">
+            <h3>3D Printing</h3>
+            <p>Rapid Prototyping and Custom Product Manufacturing.</p>
+        </div>
+
+        <div class="card">
+            <h3>Home Automation</h3>
+            <p>Smart Control Systems and Automation Solutions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Engineering Consulting</h3>
+            <p>Mechanical, Electronics and Technical Engineering Support.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="training">
+    <h2 class="section-title">Training Programs</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>CAD Draftsmen</h3>
+            <p>30 Hours - Sketching, 3D Modeling, Drafting and GD&T Basics.</p>
+        </div>
+
+        <div class="card">
+            <h3>Design Engineer</h3>
+            <p>45 Hours - Design Concepts, Calculations, BOM and Motion Study.</p>
+        </div>
+
+        <div class="card">
+            <h3>Design Engineer Pro</h3>
+            <p>45 Hours - Manufacturing, Mold Tools, Costing and Reverse Engineering.</p>
+        </div>
+
+        <div class="card">
+            <h3>Embedded Programming</h3>
+            <p>Arduino, STM32, ESP32 and Real-Time Practical Projects.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <br>
+
+    <p>Email: markettingplmntech@gmail.com</p>
+    <p>Phone: +91 94458 65942</p>
+    <p>Website: www.plmntech.com</p>
+
+    <br>
+
+    <p>
+        Ready to discuss your project or training requirements?
+    </p>
+</section>
+
+<footer>
+    © 2026 PLM NTECH. All Rights Reserved.
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919445865942">💬</a>
+
 </body>
 </html>
